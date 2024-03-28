@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #161A30;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px; /* Adjust padding as needed */
+    color: white;
+     /* Example text color */
+  }
+  
+  nav ul{
+    gap: 30px;
+  }
+  
+  .left a {
+    font-weight: bold; /* Example styling for "Portfolio" */
+    text-decoration: none; /* Example removing underline */
+  }
+  
+  .right ul {
+    list-style-type: none;
+    display: flex;
+    gap: 70px;
+    margin-top: 10px;
+  }
+  
+  .right li {
+    margin-left: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .right li a {
+    color: white; /* Example text color for links */
+    text-decoration: none; /* Example removing underline */
+  }
+
+  .right li a:hover{
+    color: cyan;
+  }
+
+  .right{
+    margin-right: 20px;
+  }
+
+  .portfolio-heading{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 5px;
+  }
+  
+
+  /* home page styling */
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    align-items: center;
+    background-color: #161A30;
+    background-image: url('./components/bgone.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px; /* Adjust padding as needed */
+     /* Set container's height to 100% */
+  }
+
+  .textcont{
+    display: grid;
+    row-gap: 10px;
+    margin-top: 200px;
+  }
+  
+  .image{
+    border: 1px solid black;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px #31363F(0, 0, 0, 0.3);
+    animation: moveHorizontal 2s linear infinite alternate;
+    margin-top: -150px;
+  }
+
+  .homebottom{
+    margin-top: 120px;
+    margin-left: 350px;
+    display: grid;
+    
+  }
+
+  .logoimg {
+    height: 100px;
+    /* Define the animation */
+    animation: rotate 8s linear infinite; /* Adjust duration and timing function as needed */
+  }
+  
+  /* Define the animation keyframes */
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg); /* Start rotation from 0 degrees */
+    }
+    to {
+      transform: rotate(360deg); /* Rotate to 360 degrees */
+    }
+  }
+
+  p{
+    color: white;
+  }
+
+  .first-para{
+    font-size: 1.3rem;
+  }
+
+  .icons-div{
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+  }
+
+  .icons-div .icon{
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .fb{
+    color: lightblue;
+  }
+
+  .ig{
+    color: orange;
+  }
+
+  .tw{
+    color: lightblue;
+  }
+
+  .btn{
+    border: 1px solid black;
+  }
+
+  .gh{
+    color: wheat;
+  }
+
+  .web{
+    color: cyan;
+    font-weight: bold;
+  }
+
+  .webh1{
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  /* about styling */
+  #about{
+    background-color: #191F38;
+    padding-bottom: 200px;
+  }
+
+
+
+  .logoimg{
+    height: 150px;
+    margin-left: 70px;
+    margin-top: 30px;
+  }
+
+  .abouth1{
+    text-align: left;
+    font-weight: bold;
+    font-size: 4rem;
+    color: white;
+    margin-left: 180px;
+    padding-top: 20px;
+  }
+
+  .about-cont{
+    display: flex;
+    gap: 200px;
+  }
+
+  .about-image{
+    animation: moveHorizontal 2s linear infinite alternate;
+  }
+
+  @keyframes moveHorizontal {
+    0% {
+      transform: translateX(-10px); /* Initial position */
+    }
+    100% {
+      transform: translateX(10px); /* Final position */
+    }
+  }
+
+  .textdiv{
+    height: 250px;
+    margin-left: 170px;
+    margin-top: 60px;
+    border-radius: 5px;
+  }
+
+  .textdiv .para{
+    color: lightcyan;
+    font-size: 1.2rem;
+    line-height: 30px;
+    margin-top: -30px;
+  }
+
+  /* skills-div styling */
+
+  #skills{
+    background-color: #191F38;
+    text-align: center;
+  }
+
+  .skillsh1{
+    text-align: left;
+    font-weight: bold;
+    font-size: 4rem;
+    color: white;
+    margin-left: 180px;
+    padding-top: 20px;
+  }
+
+  .programming-logo{
+    height: 120px;
+  }
+
+  .logos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    margin-top: 20px;
+    row-gap: 80px;
+  }
+
+  .mode-toggle{
+    margin-top: 10px;
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+  }
+
+  
