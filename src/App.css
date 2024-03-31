@@ -101,7 +101,7 @@ nav {
   .logoimg {
     height: 100px;
     /* Define the animation */
-    animation: rotate 8s linear infinite; /* Adjust duration and timing function as needed */
+    animation: rotate 9s linear infinite; /* Adjust duration and timing function as needed */
   }
   
   /* Define the animation keyframes */
@@ -167,9 +167,9 @@ nav {
   /* about styling */
   #about{
     background-color: #191F38;
-    padding-bottom: 200px;
+    padding-top: 20px;
+    padding-bottom: 100px;
   }
-
 
 
   .logoimg{
@@ -224,6 +224,8 @@ nav {
   #skills{
     background-color: #191F38;
     text-align: center;
+    padding-bottom: 100px;
+    padding-top: 20px;
   }
 
   .skillsh1{
@@ -255,3 +257,30 @@ nav {
   }
 
   
+  /* projects styling */
+  #projects{
+    background-color: #191F38;
+    padding-top: 20px;
+  }
+
+  .projectsh1{
+    text-align: left;
+    font-weight: bold;
+    font-size: 4rem;
+    color: white;
+    margin-left: 180px;
+    padding-top: 40px;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Update to 1fr 1fr */
+    gap: 50px; /* Adjust gap between cards */
+    justify-items: center; /* Center cards horizontally */
+    margin-top: 40px;
+  }
+
+
+
+
+
