@@ -57,19 +57,19 @@ function Home() {
             developer
           </p>
           <div className="icons-div">
-            <a className="icon fb">
+            <a href="https://www.facebook.com/profile.php?id=100081236807984" className="icon fb">
               <FontAwesomeIcon icon={faFacebook} />{" "}
             </a>
-            <a className="icon ig">
+            <a href="https://www.instagram.com/hiruka_mun/" className="icon ig">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a className="icon tw">
+            <a href="https://twitter.com/Hiruka1299" className="icon tw">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a className="icon gh">
+            <a href="https://github.com/Hirukamunasinghe" className="icon gh">
               <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a className="icon lin">
+            <a href="https://www.linkedin.com/in/hiruka-munasinghe-b82752217/" className="icon lin">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>

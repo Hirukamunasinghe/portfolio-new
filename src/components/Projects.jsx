@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useState, useEffect } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -23,25 +23,45 @@ const projectDescriptions = [
 ];
 
 const githubLinks = [
-  'https://github.com/example1', // Link for ADVICE GENERATOR
-  'https://github.com/example2', // Link for TIP CALCULATOR
-  'https://github.com/example3', // Link for HUDDLING LANDING PAGE
-  'https://github.com/example4', // Link for CLIPBOARD LANDING PAGE
-  'https://github.com/example5', // Link for PING PONG GAME
-  'https://github.com/example6'  // Link for PROPERTIES WEBSITE
+  'https://hirukamunasinghe.github.io/advice-generator-application/', // Link for ADVICE GENERATOR
+  'https://hirukamunasinghe.github.io/tip-calculator/', // Link for TIP CALCULATOR
+  'https://hirukamunasinghe.github.io/huddle-landing-page/', // Link for HUDDLING LANDING PAGE
+  'https://hirukamunasinghe.github.io/clipboard-landing-page/', // Link for CLIPBOARD LANDING PAGE
+  'https://hirukamunasinghe.github.io/score-keeper-project/', // Link for PING PONG GAME
+  'https://hirukamunasinghe.github.io/properties-website/'  // Link for PROPERTIES WEBSITE
 ];
 
 export default function MultiActionAreaCard() {
+  const [animated, setAnimated] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const projectsSection = document.getElementById('projects');
+      const sectionPosition = projectsSection.getBoundingClientRect().top;
+      const screenHeight = window.innerHeight;
+
+      if (!animated && sectionPosition < screenHeight * 0.7) {
+        setAnimated(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [animated]);
+
   const handleExploreButtonClick = (githubLink) => {
     window.open(githubLink, '_blank');
   };
 
   return (
-    <div id='projects'>
-      <h1 className='projectsh1'>PROJECTS</h1>
-      <div className='projects-grid'>
+    <div id="projects" className={animated ? 'projects-section fade-in' : 'projects-section'}>
+      <h1 className="projectsh1">PROJECTS</h1>
+      <div className="projects-grid">
         {images.map((image, index) => (
-          <Card key={index} className='card' sx={{ maxWidth: 800, backgroundColor:'#232A47',width:'550px' }}>
+          <Card key={index} className={animated ? 'card fade-in' : 'card'} sx={{ maxWidth: 800, backgroundColor:'#232A47',width:'550px' }}>
             <CardActionArea sx={{ width: '100%' }}>
               <CardMedia
                 component="img"
