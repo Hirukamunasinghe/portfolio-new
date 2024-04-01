@@ -5,6 +5,7 @@ import { faInstagram } from "@fortawesome/fontawesome-free-brands";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/fontawesome-free-brands";
+import { faLinkedin } from "@fortawesome/fontawesome-free-brands";
 import * as React from "react";
 import Button from "@mui/material/Button";
 import Reactlogo from './reacthomelogo.png';
@@ -37,10 +38,10 @@ function Home() {
               <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="/projects">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -67,6 +68,9 @@ function Home() {
             </a>
             <a className="icon gh">
               <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a className="icon lin">
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>
           <div className="btn-content">

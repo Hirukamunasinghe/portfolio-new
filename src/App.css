@@ -142,7 +142,7 @@ nav {
   }
 
   .tw{
-    color: lightblue;
+    color: cyan;
   }
 
   .btn{
@@ -151,6 +151,10 @@ nav {
 
   .gh{
     color: wheat;
+  }
+
+  .lin{
+    color: lightblue;
   }
 
   .web{
@@ -279,6 +283,84 @@ nav {
     justify-items: center; /* Center cards horizontally */
     margin-top: 40px;
   }
+
+  /* contact styling */
+
+  #contact{
+    background-color: #191F38;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    
+  }
+
+  .contacth1{
+    text-align: left;
+    font-weight: bold;
+    font-size: 4rem;
+    color: white;
+    margin-left: 10px;
+  }
+
+
+  .contact-card{
+    width: 1500px;
+    height: 700px;
+    background-color: #070F2B;
+    margin-left: 170px;
+    border-radius: 10px;
+    background-image: url('./components/contact.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  form{
+    display: grid;
+    row-gap: 50px;
+    margin-top: 50px;
+  }
+
+  input{
+    height: 60px;
+    width: 500px;
+    margin-left: 8px;
+    border: 1px solid cyan;
+    border-radius: 10px;
+    background-color: #1F2544;
+    font-size: 1.1rem;
+    color: white;
+  }
+
+  input::placeholder {
+    color: white;
+    padding-left: 10px;
+  }
+
+  .msginput{
+    height: 150px;
+    padding-bottom: 80px;
+  }
+
+  .sendbtn{
+    width: 170px;
+    margin-left: 8px;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    background-color: #030637;
+    color: white;
+    height: 50px;
+  }
+
+  .sendbtn:hover{
+    background-color: #0A1D56;
+    font-weight: bold;
+  }
+
+  
+
+
 
 
 
