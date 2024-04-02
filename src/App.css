@@ -673,9 +673,9 @@ input::placeholder {
   .textdiv .para {
     color: lightcyan;
     font-size: 0.8rem; /* Reduce font size for smaller screens */
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
-    white-space: nowrap; 
+    max-width: 280px;
   }
 
   /* skills responsive */
