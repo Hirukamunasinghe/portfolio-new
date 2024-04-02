@@ -497,7 +497,6 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px; /* Adjust margin-top for better centering */
   }
   
   .image {
@@ -509,6 +508,7 @@ input::placeholder {
     position: absolute;
     top: 650px;
     right: 80px;
+    display: none;
   }
   
   .homebottom {
@@ -551,12 +551,7 @@ input::placeholder {
     cursor: pointer;
   }
   
-  .btn-content {
-    margin-top: 220px; /* Adjust margin-top for better centering */
-    display: flex;
-    flex-direction: column; /* Change flex direction to column for smaller screens */
-    align-items: center; /* Center button horizontally */
-  }
+
   
   .btn {
     border: 1px solid black;
@@ -595,13 +590,20 @@ input::placeholder {
     font-weight: bold;
     color: white;
     text-align: center;
-    margin-top: 100px; /* Center text for smaller screens */
+    margin-top: 400px; /* Center text for smaller screens */
   }
 
   .first-para{
     font-weight: bold;
     font-size: 1.2rem;
     margin-top: 100px;
+  }
+
+  .btn-content {
+    display: flex;
+    flex-direction: column; /* Change flex direction to column for smaller screens */
+    align-items: center; /* Center button horizontally */
+
   }
 
   hr{
