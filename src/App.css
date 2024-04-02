@@ -14,53 +14,56 @@ body{
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px; /* Adjust padding as needed */
-    color: white;
-     /* Example text color */
-  }
-  
-  nav ul{
-    gap: 30px;
-  }
-  
-  .left a {
-    font-weight: bold; /* Example styling for "Portfolio" */
-    text-decoration: none; /* Example removing underline */
-  }
-  
-  .right ul {
-    list-style-type: none;
-    display: flex;
-    gap: 70px;
-    margin-top: 10px;
-  }
-  
-  .right li {
-    margin-left: 10px;
-    font-size: 1.2rem;
-  }
-  
-  .right li a {
-    color: white; /* Example text color for links */
-    text-decoration: none; /* Example removing underline */
-  }
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px; /* Adjust padding as needed */
+  color: white;
+}
 
-  .right li a:hover{
-    color: cyan;
-  }
+nav ul {
+  gap: 30px;
+}
 
-  .right{
-    margin-right: 20px;
-  }
+.left a {
+  font-weight: bold;
+  text-decoration: none;
+}
 
-  .portfolio-heading{
-    font-weight: bold;
-    font-size: 2rem;
-    margin-left: 5px;
+.right ul {
+  list-style-type: none;
+  display: flex;
+  gap: 70px;
+  margin-top: 10px;
+}
+
+.right li {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.right li a {
+  color: white;
+  text-decoration: none;
+}
+
+.right li a:hover {
+  color: cyan;
+}
+
+.right {
+  margin-right: 20px;
+}
+
+.portfolio-heading {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 5px;
+}
+
+/* Toggle button for mobile screens */
+  .toggle-btn {
+    display: none; /* Initially hide the toggle button */
   }
-  
 
   /* home page styling */
   .container {
@@ -433,4 +436,366 @@ input::placeholder {
   font-weight: bold;
 }
 
+
+/* responsive */
+
+/* Media query for mobile screens */
+@media (max-width: 800px) {
+
+  html,body{
+    overflow-x: hidden;
+  }
+
+  body{
+    position: relative;
+  }
+
+  .right ul {
+    display: none; /* Hide the nav links by default on mobile screens */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    background-color: #161A30;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .toggle-btn {
+    display: block; /* Display the toggle button for mobile screens */
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.7rem;
+    cursor: pointer;
+    position: absolute;
+    top: 20px; /* Adjust the top position */
+    right: 20px; /* Adjust the right position */
+  }
+
+  .right ul.show {
+    display: flex; /* Show the nav links when 'show' class is applied */
+  }
+
+  /* home responsive */
+  .container {
+    display: flex;
+    flex-direction: column; /* Change flex direction to column for smaller screens */
+    justify-content: center;
+    align-items: center;
+    background-color: #161A30;
+    background-image: url('./components/bgone.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px; /* Adjust padding as needed */
+    height: 100vh; /* Set container's height to 100% */
+    text-align: center;
+  }
+  
+  .textcont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px; /* Adjust margin-top for better centering */
+  }
+  
+  .image {
+    border: 1px solid black;
+    height: 200px; /* Adjust image height for smaller screens */
+    border-radius: 50%;
+    box-shadow: 0 8px 16px #31363F(0, 0, 0, 0.3);
+    animation: moveHorizontal 2s linear infinite alternate;
+    position: absolute;
+    top: 600px;
+    right: 200px;
+  }
+  
+  .homebottom {
+    margin-top: 20px; /* Adjust margin-top for better centering */
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoimg {
+    height: 50px; /* Adjust logo height for smaller screens */
+    /* Define the animation */
+    animation: rotate 9s linear infinite;
+  }
+  
+  /* Define the animation keyframes */
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg); /* Start rotation from 0 degrees */
+    }
+    to {
+      transform: rotate(360deg); /* Rotate to 360 degrees */
+    }
+  }
+  
+  p {
+    color: white;
+    text-align: center; /* Center text for smaller screens */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+  
+  .icons-div {
+    display: flex;
+    gap: 20px; /* Adjust gap for smaller screens */
+    margin-top: 10px;
+    align-items: center; /* Center icons horizontally */
+  }
+  
+  .icons-div .icon {
+    font-size: 1.7rem; /* Adjust icon size for smaller screens */
+    cursor: pointer;
+  }
+  
+  .btn-content {
+    margin-top: 300px; /* Adjust margin-top for better centering */
+    display: flex;
+    flex-direction: column; /* Change flex direction to column for smaller screens */
+    align-items: center; /* Center button horizontally */
+  }
+  
+  .btn {
+    border: 1px solid black;
+    width: 200px; /* Adjust button width for smaller screens */
+    height: 50px; /* Adjust button height for smaller screens */
+    text-align: center;
+    line-height: 50px; /* Center text vertically */
+  }
+  
+  .homebottom {
+    margin-top: 20px; /* Adjust margin-top for better centering */
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Change flex direction to column for smaller screens */
+  }
+  
+  .logoimg {
+    height: 50px; /* Adjust logo height for smaller screens */
+    /* Define the animation */
+    animation: rotate 9s linear infinite;
+    display: none;
+  }
+  
+  /* Define the animation keyframes */
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg); /* Start rotation from 0 degrees */
+    }
+    to {
+      transform: rotate(360deg); /* Rotate to 360 degrees */
+    }
+  }
+  
+  .webh1 {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+    font-weight: bold;
+    color: white;
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  .first-para{
+    font-weight: bold;
+  }
+
+  hr{
+    display: none;
+  }
+
+  /* about responsive */
+
+  #about{
+    text-align: center;
+  }
+
+  .about-section {
+    background-color: #191F38;
+    padding-top: 20px;
+    padding-bottom: 50px; /* Reduce padding for smaller screens */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s, transform 1s;
+  }
+  
+  .about-section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .logoimg {
+    height: 100px; /* Reduce height for smaller screens */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px; /* Adjust margin-top for smaller screens */
+  }
+  
+  .abouth1 {
+    text-align: center; /* Center text for smaller screens */
+    font-weight: bold;
+    font-size: 2.5rem; /* Reduce font size for smaller screens */
+    color: white;
+    margin-top: 30px;
+    margin-left: 0px; /* Adjust margin-top for smaller screens */
+  }
+  
+  .about-cont {
+    display: flex;
+    flex-direction: column; /* Change flex direction to column for smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .about-image {
+    height: 270px; /* Reduce height for smaller screens */
+    animation: moveHorizontal 2s linear infinite alternate;
+    border-radius: 20px;
+    margin-top: -40px;
+  }
+  
+  .textdiv {
+    height: auto; /* Remove fixed height for smaller screens */
+    margin: 20px; /* Adjust margin for smaller screens */
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .textdiv .para {
+    color: lightcyan;
+    font-size: 1rem; /* Reduce font size for smaller screens */
+    text-align: center;
+    margin-top: 10px;
+    white-space: nowrap; 
+  }
+
+  /* skills responsive */
+
+  .skillsh1{
+    font-size: 2.5rem; 
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .logos .programming-logo{
+    height: 80px;
+  }
+
+  /* projects responsive */
+
+  #projects{
+    text-align: center;
+  }
+
+  .projectsh1{
+    font-size: 2.5rem; 
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Set grid to 1 column for smaller screens */
+    gap: 30px; /* Adjust gap between cards */
+    justify-items: center; /* Center cards horizontally */
+    margin-top: 40px;
+  }
+  
+  .card-content {
+    padding: 20px; /* Adjust padding for smaller screens */
+    text-align: center; /* Center text for smaller screens */
+  }
+  
+  .card-title {
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+  }
+
+  .destypo{
+    text-align: left;
+  }
+  
+  .card-description {
+    font-size: 1rem; /* Reduce font size for smaller screens */
+  }
+
+  /* contact responsive */
+  #contact {
+    background-color: #191f38;
+    padding-top: 50px; /* Reduce top padding for smaller screens */
+    padding-bottom: 10px;
+    text-align: center; /* Center content horizontally */
+  }
+  
+  .contacth1 {
+    text-align: center; /* Center the heading */
+    font-weight: bold;
+    font-size: 3rem; /* Reduce font size for smaller screens */
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px; /* Adjust margin for smaller screens */
+  }
+  
+  .contact-card {
+    max-width: 90%; /* Set max-width for better responsiveness */
+    height: auto; /* Allow height to adjust based on content */
+    background-color: #070f2b;
+    border-radius: 10px;
+    background-image: url('./components/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto; /* Center the card */
+  }
+  
+  form {
+    display: grid;
+    row-gap: 30px; /* Adjust gap between form elements */
+    margin-top: 30px; /* Adjust margin for smaller screens */
+  }
+  
+  input {
+    height: 50px; /* Reduce height for smaller screens */
+    width: 90%; /* Set width to be responsive */
+    margin: 0 auto; /* Center the input */
+    border: 1px solid cyan;
+    border-radius: 10px;
+    background-color: #1f2544;
+    font-size: 1rem; /* Reduce font size for smaller screens */
+    color: white;
+  }
+  
+  .msginput {
+    height: 150px; /* Reduce height for smaller screens */
+    padding-bottom: 20px; /* Adjust padding */
+  }
+  
+  .sendbtn {
+    width: 50%; /* Set width to be responsive */
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 50px; /* Adjust height for smaller screens */
+    cursor: pointer;
+    font-size: 1rem; /* Reduce font size for smaller screens */
+    background-color: #030637;
+    color: white;
+    margin: 0 auto; /* Center the button */
+  }
+  
+  .sendbtn:hover {
+    background-color: #0a1d56;
+    font-weight: bold;
+  }
+
+}
 

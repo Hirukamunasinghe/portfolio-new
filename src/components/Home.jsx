@@ -1,17 +1,17 @@
 import { useState } from "react";
 import logo from "./myimage.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram } from "@fortawesome/fontawesome-free-brands";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/fontawesome-free-brands";
-import { faLinkedin } from "@fortawesome/fontawesome-free-brands";
-import * as React from "react";
+import { faInstagram, faTwitter, faFacebook, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Button from "@mui/material/Button";
 import Reactlogo from './reacthomelogo.png';
 
-
 function Home() {
+  const [showNavLinks, setShowNavLinks] = useState(false);
+
+  const toggleNavLinks = () => {
+    setShowNavLinks(!showNavLinks);
+  };
+
   const downloadCV = () => {
     // Assuming your CV file is named 'cv.pdf'
     const cvURL = "/cv.pdf"; // Replace this with the actual path to your CV file
@@ -22,6 +22,7 @@ function Home() {
     link.click();
     document.body.removeChild(link);
   };
+
   return (
     <div>
       {/* navigation bar */}
@@ -30,7 +31,7 @@ function Home() {
           <h1 className="portfolio-heading">PORTFOLIO</h1>
         </div>
         <div className="right">
-          <ul>
+          <ul className={showNavLinks ? "show" : ""}>
             <li>
               <a href="#about">About</a>
             </li>
@@ -44,9 +45,9 @@ function Home() {
               <a href="#contact">Contact</a>
             </li>
           </ul>
+          <button className="toggle-btn" onClick={toggleNavLinks}>&#9776;</button>
         </div>
       </nav>
-
 
       {/* home page div */}
       <div className="container">
@@ -74,31 +75,31 @@ function Home() {
             </a>
           </div>
           <div className="btn-content">
-          <Button
-            onClick={downloadCV}
-            sx={{
-              backgroundColor: "white",
-              color: "black",
-              border: "1px solid black",
-              borderRadius: "15px",
-              width: "260px",
-              height: "60px",
-              marginTop: "40px",
-              fontWeight:"bold",
-              fontSize: "1.1rem",
-              "&:hover": {
-                backgroundColor: "cyan",
+            <Button
+              onClick={downloadCV}
+              sx={{
+                backgroundColor: "white",
                 color: "black",
-              },
-            }}
-            variant="contained"
-          >
-            Download CV
-          </Button>
-          <div className="homebottom">
-          <hr/>
-          <img src={Reactlogo} className="logoimg"/>
-          </div>
+                border: "1px solid black",
+                borderRadius: "15px",
+                width: "260px",
+                height: "60px",
+                marginTop: "40px",
+                fontWeight: "bold",
+                fontSize: "1.1rem",
+                "&:hover": {
+                  backgroundColor: "cyan",
+                  color: "black",
+                },
+              }}
+              variant="contained"
+            >
+              Download CV
+            </Button>
+            <div className="homebottom">
+              <hr/>
+              <img src={Reactlogo} className="logoimg"/>
+            </div>
           </div>
         </div>
         <div className="image-div">

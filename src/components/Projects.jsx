@@ -74,7 +74,7 @@ export default function MultiActionAreaCard() {
                 <Typography gutterBottom variant="h5" component="div" style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'white' }}>
                   {projectHeadings[index]}
                 </Typography>
-                <Typography variant="body2" color="text.secondary" dangerouslySetInnerHTML={{ __html: projectDescriptions[index] }} style={{ fontSize: '1rem', color: 'white' }} />
+                <Typography className='destypo' variant="body2" color="text.secondary" dangerouslySetInnerHTML={{ __html: projectDescriptions[index] }} style={{ fontSize: '1rem', color: 'white' }} />
               </CardContent>
             </CardActionArea>
             <CardActions>
