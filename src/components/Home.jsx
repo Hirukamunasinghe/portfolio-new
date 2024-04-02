@@ -28,7 +28,7 @@ function Home() {
       {/* navigation bar */}
       <nav>
         <div className="left">
-          <h1 className="portfolio-heading">PORTFOLIO</h1>
+          <h1 className="portfolio-heading">PORT<span className="folio">FOLIO</span></h1>
         </div>
         <div className="right">
           <ul className={showNavLinks ? "show" : ""}>
