@@ -61,14 +61,15 @@ export default function MultiActionAreaCard() {
       <h1 className="projectsh1">PROJECTS</h1>
       <div className="projects-grid">
         {images.map((image, index) => (
-          <Card key={index} className={animated ? 'card fade-in' : 'card'} sx={{ maxWidth: 800, backgroundColor:'#232A47',width:'550px' }}>
+          <Card id='cardid' key={index} className={animated ? 'card fade-in' : 'card'} sx={{ maxWidth: 800, backgroundColor:'#232A47',width:'550px' }}>
             <CardActionArea sx={{ width: '100%' }}>
-              <CardMedia
+              <CardMedia 
                 component="img"
                 height="150"
                 image={image}
                 alt={`Project ${index + 1}`}
-                sx={{ width: '550px', height: '350px', objectFit: 'cover' }}
+                sx={{ width: '100%', height: '350px', objectFit: 'cover' }} // Modified to be responsive
+                className="imgmedia" // Added a class to apply styles
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div" style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'white' }}>
