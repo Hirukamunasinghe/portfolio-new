@@ -507,8 +507,8 @@ input::placeholder {
     box-shadow: 0 8px 16px #31363F(0, 0, 0, 0.3);
     animation: moveHorizontal 2s linear infinite alternate;
     position: absolute;
-    top: 600px;
-    right: 30px;
+    top: 650px;
+    right: 80px;
   }
   
   .homebottom {
@@ -552,7 +552,7 @@ input::placeholder {
   }
   
   .btn-content {
-    margin-top: 300px; /* Adjust margin-top for better centering */
+    margin-top: 220px; /* Adjust margin-top for better centering */
     display: flex;
     flex-direction: column; /* Change flex direction to column for smaller screens */
     align-items: center; /* Center button horizontally */
@@ -591,7 +591,7 @@ input::placeholder {
   }
   
   .webh1 {
-    font-size: 1.7rem; /* Adjust font size for smaller screens */
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
     font-weight: bold;
     color: white;
     text-align: center;
@@ -600,7 +600,7 @@ input::placeholder {
 
   .first-para{
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 100px;
   }
 
