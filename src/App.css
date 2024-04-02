@@ -508,7 +508,7 @@ input::placeholder {
     animation: moveHorizontal 2s linear infinite alternate;
     position: absolute;
     top: 600px;
-    right: 200px;
+    right: 30px;
   }
   
   .homebottom {
@@ -591,14 +591,17 @@ input::placeholder {
   }
   
   .webh1 {
-    font-size: 3rem; /* Adjust font size for smaller screens */
+    font-size: 1.7rem; /* Adjust font size for smaller screens */
     font-weight: bold;
     color: white;
-    text-align: center; /* Center text for smaller screens */
+    text-align: center;
+    margin-top: 100px; /* Center text for smaller screens */
   }
 
   .first-para{
     font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 100px;
   }
 
   hr{
@@ -729,6 +732,10 @@ input::placeholder {
 
   .card-title {
     font-size: 1.5rem; /* Reduce font size for smaller screens */
+  }
+
+  .htypo{
+    text-align: left;
   }
 
   .destypo {

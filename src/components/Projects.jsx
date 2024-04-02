@@ -72,7 +72,7 @@ export default function MultiActionAreaCard() {
                 className="imgmedia" // Added a class to apply styles
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div" style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'white' }}>
+                <Typography className='htypo' gutterBottom variant="h5" component="div" style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'white' }}>
                   {projectHeadings[index]}
                 </Typography>
                 <Typography className='destypo' variant="body2" color="text.secondary" dangerouslySetInnerHTML={{ __html: projectDescriptions[index] }} style={{ fontSize: '1rem', color: 'white' }} />
