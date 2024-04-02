@@ -617,15 +617,7 @@ input::placeholder {
     text-align: center;
   }
 
-  .about-section {
-    background-color: #191F38;
-    padding-top: 20px;
-    padding-bottom: 50px; /* Reduce padding for smaller screens */
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 2s, transform 1s;
-  }
-  
+
   .about-section.fade-in {
     opacity: 1;
     transform: translateY(0);
@@ -665,7 +657,7 @@ input::placeholder {
   }
   
   .about-image {
-    height: 270px; /* Reduce height for smaller screens */
+    height: 220px; /* Reduce height for smaller screens */
     animation: moveHorizontal 2s linear infinite alternate;
     border-radius: 20px;
     margin-top: -40px;
@@ -680,7 +672,7 @@ input::placeholder {
   
   .textdiv .para {
     color: lightcyan;
-    font-size: 1rem; /* Reduce font size for smaller screens */
+    font-size: 0.8rem; /* Reduce font size for smaller screens */
     text-align: center;
     margin-top: 10px;
     white-space: nowrap; 
