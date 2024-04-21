@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import devlogo from "./developer.jpg";
 import Button from "@mui/material/Button";
 
+
 function About() {
   const [visible, setVisible] = useState(false);
 
@@ -49,9 +50,11 @@ function About() {
                 marginTop: "60px",
                 fontWeight: "bold",
                 fontSize: "1.1rem",
+                textDecoration:"none",
                 "&:hover": {
                   backgroundColor: "cyan",
                   color: "black",
+                  textDecoration:"none"
                 },
               }}
               variant="contained"
