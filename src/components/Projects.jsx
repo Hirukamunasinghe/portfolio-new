@@ -55,7 +55,7 @@ export default function MultiActionAreaCard() {
   const handleExploreButtonClick = (githubLink) => {
     window.open(githubLink, '_blank');
   };
-
+ 
   return (
     <div id="projects" className={animated ? 'projects-section fade-in' : 'projects-section'}>
       <h1 className="projectsh1">PROJECTS</h1>

@@ -54,7 +54,7 @@ function Home() {
         <div className="textcont">
           <h1 className="webh1"><span className="web">WEB</span> DEVELOPER</h1>
           <p className="first-para">
-            Hi! I'm Hiruka Munasinghe, <br />a passionate Front end web
+            Hi! I'm Hiruka Munasinghe, <br />a passionate web
             developer
           </p>
           <div className="icons-div">
