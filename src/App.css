@@ -386,6 +386,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 350px;
+    padding-top: 20px;
   }
 
   .cert-img {
