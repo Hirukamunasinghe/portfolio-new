@@ -71,7 +71,7 @@ const Skills = () => {
         />
         <img
           className="programming-logo"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
           alt="Bootstrap"
         />
       </div>
