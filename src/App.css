@@ -385,13 +385,13 @@ nav ul {
   .images-div{
     display: flex;
     justify-content: center;
-    gap: 350px;
+    gap: 50px;
     padding-top: 20px;
   }
 
   .cert-img {
-    height: 600px;
-    width: 650px;
+    height: 500px;
+    width: 550px;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s; /* Add transition for smooth animation */
