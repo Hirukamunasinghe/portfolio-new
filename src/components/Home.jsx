@@ -17,7 +17,7 @@ function Home() {
     const cvURL = "hirukacv.pdf"; // Replace this with the actual path to your CV file
     const link = document.createElement("a");
     link.href = cvURL;
-    link.download = "cv.pdf";
+    link.download = "hirukacv.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
