@@ -5,6 +5,7 @@ import { faInstagram, faTwitter, faFacebook, faGithub, faLinkedin } from "@forta
 import Button from "@mui/material/Button";
 import Reactlogo from './reacthomelogo.png';
 
+
 function Home() {
   const [showNavLinks, setShowNavLinks] = useState(false);
 

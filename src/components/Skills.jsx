@@ -59,14 +59,13 @@ const Skills = () => {
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
           alt="Tailwind CSS"
         />
+        <img 
+        className="programming-logo"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+        alt="bootstrap" />
         <img
           className="programming-logo"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
-          alt="Python"
-        />
-        <img
-          className="programming-logo"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
           alt="Java"
         />
         
