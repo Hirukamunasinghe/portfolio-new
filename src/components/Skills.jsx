@@ -72,7 +72,23 @@ const Skills = () => {
         <img className="programming-logo" 
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" 
         alt="node" />
-          
+
+        <img className="programming-logo" 
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+        alt="node" />
+
+        <img className="programming-logo" 
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+        alt="node" />
+
+        <img className="programming-logo" 
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
+        alt="node" />
+
+        <img className="programming-logo" 
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+        alt="node" />
+
       </div>
     </div>
   );
