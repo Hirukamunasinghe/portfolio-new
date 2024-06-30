@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import emailjs from 'emailjs-com';
 import contactImage from "./contact.jpg";
+import { faCopyright } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Contact() {
   const [visible, setVisible] = useState(false);
@@ -83,6 +85,9 @@ function Contact() {
           />
           <button className="sendbtn" type="submit">Send</button>
         </form>
+      </div>
+      <div>
+        <p className="footerpara">Copyright 2024 <FontAwesomeIcon icon={faCopyright}/> - Hiruka Munasinghe</p>
       </div>
     </div>
   );
