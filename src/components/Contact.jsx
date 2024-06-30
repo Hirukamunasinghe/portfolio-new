@@ -87,7 +87,7 @@ function Contact() {
         </form>
       </div>
       <div>
-        <p className="footerpara">Copyright 2024 <FontAwesomeIcon icon={faCopyright}/> - Hiruka Munasinghe</p>
+        <p className="footerpara">Copyright  <FontAwesomeIcon icon={faCopyright}/> 2024 All Rights Reserved - Hiruka Munasinghe</p>
       </div>
     </div>
   );
