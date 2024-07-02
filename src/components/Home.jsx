@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faTwitter, faFacebook, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Button from "@mui/material/Button";
 import Reactlogo from './reacthomelogo.png';
+import cvPDF from './hiruucv.pdf'; // Adjust the path to your CV PDF file
 
 
 function Home() {
@@ -13,15 +14,8 @@ function Home() {
     setShowNavLinks(!showNavLinks);
   };
 
-  const downloadCV = () => {
-    // Assuming your CV file is named 'cv.pdf'
-    const cvURL = "hiruucv.pdf"; // Replace this with the actual path to your CV file
-    const link = document.createElement("a");
-    link.href = cvURL;
-    link.download = cvURL;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const openCV = () => {
+    window.open(cvPDF, '_blank'); // Opens the PDF file in a new tab
   };
 
   return (
@@ -77,7 +71,7 @@ function Home() {
           </div>
           <div className="btn-content">
             <Button
-              onClick={downloadCV}
+              onClick={openCV}
               sx={{
                 backgroundColor: "white",
                 color: "black",
