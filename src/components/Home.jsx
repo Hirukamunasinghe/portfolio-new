@@ -15,7 +15,7 @@ function Home() {
 
   const downloadCV = () => {
     // Assuming your CV file is named 'cv.pdf'
-    const cvURL = "hirukacv.pdf"; // Replace this with the actual path to your CV file
+    const cvURL = "hiruucv.pdf"; // Replace this with the actual path to your CV file
     const link = document.createElement("a");
     link.href = cvURL;
     link.download = cvURL;
