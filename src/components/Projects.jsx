@@ -13,7 +13,7 @@ import properties from './properties.png';
 import webx from './webxbg.png'
 
 const images = [adviceimg, webx, huddle, lpage, pingpong, properties];
-const projectHeadings = ['ADVICE GENERATOR', 'WEBX SOLUTIONS - PERSONAL WEBSITE', 'HUDDLING LANDING PAGE', 'CLIPBOARD LANDING PAGE', 'PING PONG GAME', 'PROPERTIES WEBSITE'];
+const projectHeadings = ['ADVICE GENERATOR', 'WEBXSPHERE - PERSONAL WEBSITE', 'HUDDLING LANDING PAGE', 'CLIPBOARD LANDING PAGE', 'PING PONG GAME', 'PROPERTIES WEBSITE'];
 const projectDescriptions = [
   '<span style="color: lightblue">HTML</span> <span style="color: orange">CSS</span> <span style="color: yellow">JAVASCRIPT</span>',
   '<span style="color: lightblue">HTML</span> <span style="color: orange">TAILWIND-CSS</span> <span style="color: yellow">JAVASCRIPT</span> <span style="color: cyan">REACT</span>',
