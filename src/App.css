@@ -868,8 +868,11 @@ input::placeholder {
     font-size: 1rem; /* Reduce font size for smaller screens */
     background-color: #030637;
     color: white;
-    margin: 0 auto; /* Center the button */
+    margin: 0 auto;
+    margin-bottom: 20px; /* Center the button */
   }
+
+
   
   .sendbtn:hover {
     background-color: #0a1d56;
