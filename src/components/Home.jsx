@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faTwitter, faFacebook, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Button from "@mui/material/Button";
 import Reactlogo from './reacthomelogo.png';
-import cvPDF from './hiruucv.pdf'; // Adjust the path to your CV PDF file
+import cvPDF from './hirukamunasinghecv.pdf'; // Adjust the path to your CV PDF file
 
 
 function Home() {
