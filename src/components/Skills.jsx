@@ -32,7 +32,7 @@ const Skills = () => {
       id="skills"
       className={visible ? "skills-section fade-in" : "skills-section"}
     >
-      <h1 className="skillsh1">Skills</h1>
+      <h1 className="skillsh1">SKILLS</h1>
       <div className="logos">
         <img
           className="programming-logo"

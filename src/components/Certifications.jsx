@@ -30,7 +30,7 @@ const Certifications = () => {
 
     return (
         <div id="certifications" className={animated ? 'certifications-section fade-in' : 'certifications-section'}>
-            <h1 className="cert-h1">Certifications</h1>
+            <h1 className="cert-h1">CERTIFICATIONS</h1>
             <div className="images-div">
                 <a href={URLP}><img className="cert-img" src={Python} alt=""/></a>
                 <a href={URLH}><img className="cert-img" src={Hackathon} alt=""/></a>

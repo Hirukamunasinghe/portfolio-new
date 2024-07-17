@@ -62,18 +62,18 @@ export default function MultiActionAreaCard() {
       <h1 className="projectsh1">PROJECTS</h1>
       <div className="projects-grid">
         {images.map((image, index) => (
-          <Card id='cardid' key={index} className={animated ? 'card fade-in' : 'card'} sx={{ maxWidth: 800, backgroundColor:'#232A47',width:'550px' }}>
+          <Card id='cardid' key={index} className={animated ? 'card fade-in' : 'card'} sx={{ maxWidth: 800, backgroundColor:'#232A47',width:'500px' }}>
             <CardActionArea sx={{ width: '100%' }}>
               <CardMedia 
                 component="img"
                 height="150"
                 image={image}
                 alt={`Project ${index + 1}`}
-                sx={{ width: '100%', height: '350px', objectFit: 'cover' }} // Modified to be responsive
+                sx={{ width: '100%', height: '300px', objectFit: 'cover' }} // Modified to be responsive
                 className="imgmedia" // Added a class to apply styles
               />
               <CardContent>
-                <Typography className='htypo' gutterBottom variant="h5" component="div" style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'white' }}>
+                <Typography className='htypo' gutterBottom variant="h5" component="div" style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'white' }}>
                   {projectHeadings[index]}
                 </Typography>
                 <Typography className='destypo' variant="body2" color="text.secondary" dangerouslySetInnerHTML={{ __html: projectDescriptions[index] }} style={{ fontSize: '1rem', color: 'white' }} />
