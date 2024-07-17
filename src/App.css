@@ -790,7 +790,7 @@ input::placeholder {
   }
 
   #cardid {
-    max-width: 300px; /* Maximum width of the card */
+    max-width: 350px; /* Maximum width of the card */
     background-color: #232A47;
     margin: 0 auto; /* Center the card horizontally */
   }
