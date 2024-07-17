@@ -74,7 +74,7 @@ nav ul {
   .container {
     display: flex;
     justify-content: center;
-    gap: 120px;
+    gap: 100px;
     align-items: center;
     background-color: #161A30;
     background-image: url('./components/bgone.jpg');
@@ -92,7 +92,7 @@ nav ul {
   
   .image{
     border: 1px solid black;
-    height: 280px;
+    height: 250px;
     border-radius: 50%;
     box-shadow: 0 8px 16px #31363F(0, 0, 0, 0.3);
     animation: moveHorizontal 2s linear infinite alternate;
@@ -179,7 +179,7 @@ nav ul {
   }
 
   .webh1{
-    font-size: 3.5rem;
+    font-size: 3.4rem;
     font-weight: bold;
     color: white;
   }
@@ -461,7 +461,7 @@ nav ul {
 }
 
 .contact-card {
-  width: 1200px;
+  width: 1300px;
   height: 600px;
   background-color: #070f2b;
   margin-left: 170px;
@@ -469,6 +469,7 @@ nav ul {
   background-image: url('./components/contact.jpg');
   background-size: cover;
   background-position: center;
+  margin: auto;
 }
 
 form {
