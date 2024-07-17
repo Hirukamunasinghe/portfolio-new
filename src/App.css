@@ -731,14 +731,14 @@ input::placeholder {
   .about-cont {
     display: flex;
     flex-direction: column; /* Change flex direction to column for smaller screens */
-    align-items: center; /* Center items horizontally */
+    align-items: center; 
   }
   
   .about-image {
     height: 220px; /* Reduce height for smaller screens */
     animation: moveHorizontal 2s linear infinite alternate;
     border-radius: 20px;
-    margin-top: -40px;
+    margin-top: -90px;
   }
   
   .textdiv {
@@ -766,6 +766,7 @@ input::placeholder {
 
   .logos .programming-logo{
     height: 80px;
+    margin-top: 25px;
   }
 
   /* projects responsive */
