@@ -74,7 +74,7 @@ nav ul {
   .container {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 75px;
     align-items: center;
     background-color: #161A30;
     background-image: url('./components/bgone.jpg');
