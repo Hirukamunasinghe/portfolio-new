@@ -485,11 +485,11 @@ input {
   background-color: #1f2544;
   font-size: 1rem;
   color: white;
+  padding-left: 10px;
 }
 
 input::placeholder {
   color: white;
-  padding-left: 10px;
 }
 
 .msginput {
