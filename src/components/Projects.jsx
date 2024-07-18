@@ -11,15 +11,16 @@ import lpage from './lpage.jpg';
 import pingpong from './pingpong.jpg';
 import properties from './properties.png';
 import webx from './webxbg.png'
+import webxsphere from './webxsphereimage.png'
 
-const images = [adviceimg, webx, huddle, lpage, pingpong, properties];
-const projectHeadings = ['ADVICE GENERATOR', 'WEBXSPHERE - PERSONAL WEBSITE', 'HUDDLING LANDING PAGE', 'CLIPBOARD LANDING PAGE', 'PING PONG GAME', 'PROPERTIES WEBSITE'];
+const images = [adviceimg, webx, huddle, lpage, webxsphere, properties];
+const projectHeadings = ['ADVICE GENERATOR', 'WEBXSPHERE - PERSONAL WEBSITE', 'HUDDLING LANDING PAGE', 'CLIPBOARD LANDING PAGE', 'WEBXSPHERE - STARTUP WEBSITE', 'PROPERTIES WEBSITE'];
 const projectDescriptions = [
   '<span style="color: lightblue">HTML</span> <span style="color: orange">CSS</span> <span style="color: yellow">JAVASCRIPT</span>',
   '<span style="color: lightblue">HTML</span> <span style="color: orange">TAILWIND-CSS</span> <span style="color: yellow">JAVASCRIPT</span> <span style="color: cyan">REACT</span>',
   '<span style="color: lightblue">HTML</span> <span style="color: orange">CSS</span>',
   '<span style="color: lightblue">HTML</span> <span style="color: orange">CSS</span>',
-  '<span style="color: lightblue">HTML</span> <span style="color: orange">CSS</span> <span style="color: yellow">JAVASCRIPT</span>',
+  '<span style="color: yellow">WORDPRESS</span>',
   '<span style="color: lightblue">HTML</span> <span style="color: orange">CSS</span> <span style="color: yellow">JAVASCRIPT</span> <span style="color: cyan">REACT</span>'
 ];
 
@@ -28,7 +29,7 @@ const githubLinks = [
   'https://hirukamunasinghe.github.io/webx/', // Link for WEBX
   'https://hirukamunasinghe.github.io/huddle-landing-page/', // Link for HUDDLING LANDING PAGE
   'https://hirukamunasinghe.github.io/clipboard-landing-page/', // Link for CLIPBOARD LANDING PAGE
-  'https://hirukamunasinghe.github.io/score-keeper-project/', // Link for PING PONG GAME
+  'https://webxsphere.com', // Link for PING PONG GAME
   'https://hirukamunasinghe.github.io/properties-website/'  // Link for PROPERTIES WEBSITE
 ];
 
