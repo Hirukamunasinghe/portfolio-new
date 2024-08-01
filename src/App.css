@@ -424,7 +424,7 @@ nav ul {
     }
 
     .cert-img{
-      width: 330px;
+      width: 325px;
       height: 350px;
     }
   }
@@ -790,7 +790,7 @@ input::placeholder {
   }
 
   #cardid {
-    max-width: 350px; /* Maximum width of the card */
+    max-width: 325px; /* Maximum width of the card */
     background-color: #232A47;
     margin: 0 auto; /* Center the card horizontally */
   }
